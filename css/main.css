@@ -1,0 +1,797 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+img,
+ul,
+ol,
+li,
+form,
+input,
+button {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a,
+button {
+  border: 0;
+  text-decoration: none;
+}
+
+.section {
+  padding: 50px 0;
+}
+.section .container .content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.section .container .content .section_title {
+  font-weight: bolder;
+  font-size: 35px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  color: #16116b;
+}
+.section .container .content .section_title::after {
+  content: "";
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  left: 0;
+  top: 0;
+  z-index: 10;
+  box-shadow: -1px 5px 1px -1px #d1471f;
+}
+
+/* container */
+.container {
+  padding: 0 70Px;
+}
+
+body {
+  font-size: 18px;
+  font-family: "kanit", "sans-serif";
+}
+
+/* button */
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  font-weight: 900;
+  padding: 10px 20px;
+  border-radius: 1rem;
+  color: white;
+  background-color: #d1471f;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s;
+}
+button i {
+  color: rgba(0, 0, 0, 0);
+  transition: 0.5s;
+  position: absolute;
+  right: 20px;
+  font-size: 15px;
+  bottom: 10px;
+}
+
+button:hover {
+  background-color: #16116b;
+}
+button:hover i {
+  color: #fff;
+  right: 5px;
+}
+
+/* header section */
+.header {
+  background-color: #FFFFFF;
+  padding: 20px 0;
+}
+.header .header_container .header_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header .header_container .header_content .logo_container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-size: 30px;
+  font-weight: bolder;
+  align-items: center;
+}
+.header .header_container .header_content .nav .nav_content {
+  display: flex;
+  gap: 100px;
+}
+.header .header_container .header_content .nav .nav_content .nav_links {
+  display: flex;
+  gap: 25px;
+  font-size: 16px;
+  font-weight: 400;
+  align-items: center;
+}
+.header .header_container .header_content .nav .nav_content .nav_links .link {
+  display: flex;
+}
+.header .header_container .header_content .nav .nav_content .nav_links .link a {
+  color: #16116b;
+}
+.header .header_container .header_content .nav .nav_content .nav_links .link a:hover {
+  color: orangered;
+  transition: 0.1s;
+}
+/* start banner section */
+.banner-section {
+  background: url(../images/Action-Education.jpg) no-repeat center;
+  background-size: cover;
+  height: 500px;
+}
+.banner-section .banner_container {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(34, 32, 76, 0.5803921569);
+  display: flex;
+  align-items: center;
+}
+.banner-section .banner_container .banner_content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.banner-section .banner_container .banner_content .banner_inner .banner_inner_text {
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 40px;
+  font-weight: bolder;
+  color: #FFFFFF;
+}
+.banner-section .banner_container .banner_content .banner_social_links {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.banner-section .banner_container .banner_content .banner_social_links .social_link {
+  border-radius: 50%;
+  transition: 0.2s;
+  background-color: #fff;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 23px;
+}
+.banner-section .banner_container .banner_content .banner_social_links .social_link .youtube {
+  color: #ff0000;
+}
+.banner-section .banner_container .banner_content .banner_social_links .social_link .twitter {
+  color: #0dcfdd;
+}
+.banner-section .banner_container .banner_content .banner_social_links .social_link .instagram {
+  color: #000;
+}
+.banner-section .banner_container .banner_content .banner_social_links .social_link:hover {
+  font-size: 25px;
+  background-color: #e2e2e2;
+}
+
+/* education talk about section */
+.education-section .education_container .education_content .education_section_fields .education_section_fields_container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 30px;
+}
+.education-section .education_container .education_content .education_section_fields .education_section_fields_container .youtub_vid_des_container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.education-section .education_container .education_content .education_section_fields .education_section_fields_container .youtub_vid_des_container .youtub_vid_des_text2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.education-section .education_container .education_content .education_section_fields .education_section_fields_container .youtube_video .video {
+  width: 560px;
+  height: 315px;
+  padding: 20px;
+  border-radius: 2rem;
+  align-items: center;
+  justify-content: center;
+  box-shadow: -2px 5px 10px 5px #9b9898;
+}
+
+/* nos cause section style */
+.nos_causes-section {
+  background-color: #16116b;
+  color: #fff;
+}
+.nos_causes-section .nos_causes_section_container .nos_causes_section_content .nos_cause_section_title {
+  color: #fff;
+}
+.nos_causes-section .nos_causes_section_container .nos_causes_section_content .nos_cause_sections_fields {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.nos_causes-section .nos_causes_section_container .nos_causes_section_content .nos_cause_sections_fields .causes_childs_container {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 30px;
+}
+.nos_causes-section .nos_causes_section_container .nos_causes_section_content .nos_cause_sections_fields .causes_childs_container .chield {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.nos_causes-section .nos_causes_section_container .nos_causes_section_content .nos_cause_sections_fields .causes_childs_container .chield .content {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 300px;
+  position: relative;
+  border-radius: 2rem;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.nos_causes-section .nos_causes_section_container .nos_causes_section_content .nos_cause_sections_fields .causes_childs_container .chield .content img {
+  position: absolute;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.nos_causes-section .nos_causes_section_container .nos_causes_section_content .nos_cause_sections_fields .causes_childs_container .chield .content .inner {
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+.nos_causes-section .nos_causes_section_container .nos_causes_section_content .nos_cause_sections_fields .causes_childs_container .chield .content::after {
+  transition: all 0.5s;
+  content: "";
+  position: absolute;
+  top: 290px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: orangered;
+  max-width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.nos_causes-section .nos_causes_section_container .nos_causes_section_content .nos_cause_sections_fields .causes_childs_container .chield:hover .content::after {
+  top: 0;
+  content: "les enfants, les femmes ont tous droit d'aller à l'école";
+}
+
+/* about us section */
+.about_us-section .about_us_section_container .about_us_section_content .about_us_section_fields .about_us_section_fields_container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.about_us-section .about_us_section_container .about_us_section_content .about_us_section_fields .about_us_section_fields_container .intro_block p a {
+  font-weight: 600;
+  color: #ce3207;
+}
+.about_us-section .about_us_section_container .about_us_section_content .about_us_section_fields .about_us_section_fields_container .localisation_block .localisation_fields_container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 50px;
+}
+.about_us-section .about_us_section_container .about_us_section_content .about_us_section_fields .about_us_section_fields_container .localisation_block .localisation_fields_container .image_des {
+  padding: 20px;
+  border-radius: 2rem;
+  align-items: center;
+  justify-content: center;
+  box-shadow: -2px 5px 10px 5px #9b9898;
+}
+.about_us-section .about_us_section_container .about_us_section_content .about_us_section_fields .about_us_section_fields_container .localisation_block .localisation_fields_container .image_des img {
+  border-radius: 2rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about_us-section .about_us_section_container .about_us_section_content .about_us_section_fields .about_us_section_fields_container .localisation_block .localisation_fields_container .description {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.about_us-section .about_us_section_container .about_us_section_content .about_us_section_fields .about_us_section_fields_container .localisation_block .localisation_fields_container .description .des_content span {
+  color: #080358;
+  font-weight: 500;
+}
+.about_us-section .about_us_section_container .about_us_section_content .about_us_section_fields .about_us_section_fields_container .localisation_block .localisation_fields_container .description .make_dont_btn {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+/* our actions section */
+.nos_actions-section {
+  background-color: rgba(240, 146, 6, 0.1450980392);
+}
+.nos_actions-section .nos_actions_section_container .nos_actions_section_content .nos_actions_section_fields {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.nos_actions-section .nos_actions_section_container .nos_actions_section_content .nos_actions_section_fields p {
+  color: #494949;
+}
+.nos_actions-section .nos_actions_section_container .nos_actions_section_content .nos_actions_section_fields .fields_container {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+}
+.nos_actions-section .nos_actions_section_container .nos_actions_section_content .nos_actions_section_fields .fields_container .action {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  background-color: #fff;
+  border-radius: 1rem;
+}
+.nos_actions-section .nos_actions_section_container .nos_actions_section_content .nos_actions_section_fields .fields_container .action .action_des {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  padding-top: 0;
+}
+.nos_actions-section .nos_actions_section_container .nos_actions_section_content .nos_actions_section_fields .fields_container .action .action_des .description .content {
+  text-align: left;
+  color: #080358;
+}
+.nos_actions-section .nos_actions_section_container .nos_actions_section_content .nos_actions_section_fields .fields_container .action .action_des .description .date {
+  color: #ce3207;
+  text-align: right;
+}
+.nos_actions-section .nos_actions_section_container .nos_actions_section_content .nos_actions_section_fields .fields_container .action .action_des .action_show {
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 1px solid #ce3207;
+  background-color: #fff;
+  color: #ce3207;
+  padding: 5px 15px;
+  font-weight: 600;
+  font-size: 15px;
+}
+.nos_actions-section .nos_actions_section_container .nos_actions_section_content .nos_actions_section_fields .fields_container .action .action_des .action_show:hover {
+  border: none;
+  background-color: #16116b;
+  color: #fff;
+  padding: 6px 15px;
+}
+.nos_actions-section .nos_actions_section_container .nos_actions_section_content .nos_actions_section_fields .actions_show_all {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+/* agir avec nous section */
+.agir_avec_nous-section .agir_avec_nous_section_container .agir_avec_nous_section_content .agir_avec_nous_section_fields .agir_call-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.agir_avec_nous-section .agir_avec_nous_section_container .agir_avec_nous_section_content .agir_avec_nous_section_fields .agir_call-actions .what_icon {
+  display: flex;
+  position: inherit;
+  gap: 10px;
+}
+.agir_avec_nous-section .agir_avec_nous_section_container .agir_avec_nous_section_content .agir_avec_nous_section_fields .agir_call-actions .what_icon #what_icon {
+  position: inherit;
+  color: #0c6800;
+  font-size: 21px;
+  font-weight: 500;
+}
+
+@keyframes defilement {
+  0% {
+    transform: translateX(0);
+    /* Début à gauche */
+  }
+  100% {
+    transform: translateX(-100%);
+    /* Fin à droite */
+  }
+}
+/* nos partenaire section */
+.nos_partenaires-section .nos_partenaires_container .nos_partenaires_content .nos_partenaires_section_fields .nos_partenaires_fields_container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  white-space: nowrap;
+  height: 100px;
+  overflow-x: hidden;
+  gap: 100px;
+  align-items: center;
+}
+.nos_partenaires-section .nos_partenaires_container .nos_partenaires_content .nos_partenaires_section_fields .nos_partenaires_fields_container .partenaire {
+  animation: defilement 4s linear infinite;
+  flex: 0 0 250px;
+  height: 70px;
+  text-align: center;
+  border: 1px solid #9b9898;
+  border-radius: 0.2rem;
+  margin-right: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nos_partenaires-section .nos_partenaires_container .nos_partenaires_content .nos_partenaires_section_fields .nos_partenaires_fields_container .partenaire img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
+  max-height: 70px;
+}
+.nos_partenaires-section .nos_partenaires_container .nos_partenaires_content .call-actions {
+  display: flex !important;
+  gap: 50px;
+}
+
+/* footer section */
+.footer {
+  background-color: #080358;
+  color: #fff;
+}
+.footer .footer_container .footer_content {
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+.footer .footer_container .footer_content .contact_ONG .chield {
+  display: flex;
+  gap: 5px;
+}
+.footer .footer_container .footer_content .contact_ONG .chield .drapeau {
+  display: flex;
+  border: 1px solid #fff;
+  height: 20px;
+}
+.footer .footer_container .footer_content .contact_ONG .chield .drapeau span {
+  padding: 1px 5px;
+}
+.footer .footer_container .footer_content .contact_ONG .chield .drapeau .orange {
+  background-color: #ff7b00;
+}
+.footer .footer_container .footer_content .contact_ONG .chield .drapeau .blanc {
+  background-color: #fff;
+}
+.footer .footer_container .footer_content .contact_ONG .chield .drapeau .vert {
+  background-color: #35bd00;
+}
+.footer .footer_container .footer_content .send_message_form {
+  background-color: #d1471f;
+  color: #fff;
+  border-radius: 1rem;
+}
+.footer .footer_container .footer_content .send_message_form .form_container {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer .footer_container .footer_content .send_message_form .form_container .form_title {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+.footer .footer_container .footer_content .send_message_form .form_container .form_content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer .footer_container .footer_content .send_message_form .form_container .form_content .chield {
+  display: flex;
+  flex-direction: column;
+}
+.footer .footer_container .footer_content .send_message_form .form_container .form_content .chield label span {
+  color: #080358;
+}
+.footer .footer_container .footer_content .send_message_form .form_container .form_content .chield input {
+  padding: 7px 0;
+  font-size: 15px;
+  padding-left: 20px;
+  font-weight: 500;
+  border-radius: 0.2rem;
+  border: none;
+}
+.footer .footer_container .footer_content .send_message_form .form_container .form_content .chield textarea {
+  height: 150px;
+  border-radius: 0.2rem;
+  border: none;
+}
+.footer .footer_container .footer_content .send_message_form .form_container .form_content button {
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #16116b;
+  border: 2px solid inherit;
+}
+.footer .footer_container .footer_content .send_message_form .form_container .form_content button:hover {
+  background-color: #040131;
+}
+
+@media (max-width: 420px) {
+  .container {
+    padding: 0 12px;
+  }
+  /* button */
+  button {
+    font-size: 15px;
+    font-weight: 500;
+    padding: 7px 15px;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  button i {
+    right: 20px;
+    font-size: 12px;
+    bottom: 8px;
+  }
+  .section {
+    text-align: justify;
+  }
+  .section .container .content {
+    font-weight: 300;
+    font-size: 17px;
+  }
+  .section .container .content .section_title {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  /* header section */
+  .header {
+    padding: 10px 0;
+    width: 100%;
+  }
+  .header .header_container .header_content .logo_container {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .header .header_container .header_content .nav .nav_content {
+    display: none;
+  }
+  .header .header_container .header_content .bar {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    background-color: #e6e6e6;
+    gap: 4px;
+  }
+  .header .header_container .header_content .bar span {
+    padding: 1.5px 0;
+    width: 25px;
+    background-color: #ce3207;
+  }
+  .header .header_container .header_content .bar .bottom-bar {
+    width: 18px;
+  }
+  /* start banner section */
+  .banner-section {
+    height: 250px;
+  }
+  .banner-section .banner_container .banner_content {
+    gap: 20px;
+  }
+  .banner-section .banner_container .banner_content .banner_inner .banner_inner_text {
+    font-size: 18px;
+    font-weight: 400;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .banner-section .banner_container .banner_content .banner_social_links {
+    gap: 10px;
+  }
+  .banner-section .banner_container .banner_content .banner_social_links .social_link {
+    height: 30px;
+    width: 30px;
+    font-size: 18px;
+  }
+  .banner-section .banner_container .banner_content .banner_social_links .social_link:hover {
+    font-size: 25px;
+    background-color: inherit;
+  }
+  /* education talk about section */
+  .education-section .education_container .education_content .education_section_fields .education_section_fields_container {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 30px;
+    text-align: justify;
+  }
+  .education-section .education_container .education_content .education_section_fields .education_section_fields_container .youtub_vid_des_container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 300;
+    font-size: 17px;
+  }
+  .education-section .education_container .education_content .education_section_fields .education_section_fields_container .youtub_vid_des_container .youtub_vid_des_text2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .education-section .education_container .education_content .education_section_fields .education_section_fields_container .youtube_video .video {
+    max-width: 90%;
+    height: 250px;
+    padding: 3%;
+    border-radius: 2rem;
+    box-shadow: -2px 5px 10px 5px #9b9898;
+    margin: 0 auto;
+    display: flex;
+  }
+  /* nos cause section style */
+  .nos_causes-section .nos_causes_section_container .nos_causes_section_content .nos_cause_sections_fields .causes_childs_container {
+    grid-template-columns: repeat(1, auto);
+    justify-content: center;
+  }
+  .nos_causes-section .nos_causes_section_container .nos_causes_section_content .nos_cause_sections_fields .causes_childs_container .chield {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .nos_causes-section .nos_causes_section_container .nos_causes_section_content .nos_cause_sections_fields .causes_childs_container .chield .content {
+    height: 250px;
+  }
+  .nos_causes-section .nos_causes_section_container .nos_causes_section_content .nos_cause_sections_fields .causes_childs_container .chield .content .inner {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .nos_causes-section .nos_causes_section_container .nos_causes_section_content .nos_cause_sections_fields .causes_childs_container .chield .content::after {
+    top: 98%;
+  }
+  .nos_causes-section .nos_causes_section_container .nos_causes_section_content .nos_cause_sections_fields .causes_childs_container .chield:hover .content::after {
+    top: 0;
+    content: "les enfants, les femmes ont tous droit d'aller à l'école";
+  }
+  /* about us section */
+  .about_us-section .about_us_section_container .about_us_section_content .about_us_section_fields .about_us_section_fields_container {
+    gap: 20px;
+  }
+  .about_us-section .about_us_section_container .about_us_section_content .about_us_section_fields .about_us_section_fields_container .intro_block p a {
+    font-weight: 500;
+  }
+  .about_us-section .about_us_section_container .about_us_section_content .about_us_section_fields .about_us_section_fields_container .localisation_block .localisation_fields_container {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    gap: 20px;
+  }
+  .about_us-section .about_us_section_container .about_us_section_content .about_us_section_fields .about_us_section_fields_container .localisation_block .localisation_fields_container .image_des {
+    padding: 10px;
+    box-shadow: -2px 0px 10px 5px #9b9898;
+  }
+  .about_us-section .about_us_section_container .about_us_section_content .about_us_section_fields .about_us_section_fields_container .localisation_block .localisation_fields_container .description {
+    gap: 20px;
+  }
+  .about_us-section .about_us_section_container .about_us_section_content .about_us_section_fields .about_us_section_fields_container .localisation_block .localisation_fields_container .description .des_content span {
+    font-weight: 400;
+  }
+  /* our actions section */
+  .nos_actions-section .nos_actions_section_container .nos_actions_section_content .nos_actions_section_fields {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .nos_actions-section .nos_actions_section_container .nos_actions_section_content .nos_actions_section_fields .fields_container {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    justify-content: center;
+    gap: 20px;
+  }
+  .nos_actions-section .nos_actions_section_container .nos_actions_section_content .nos_actions_section_fields .fields_container .action {
+    width: 100%;
+  }
+  .nos_actions-section .nos_actions_section_container .nos_actions_section_content .nos_actions_section_fields .fields_container .action .action_des .action_show {
+    font-weight: 500;
+    font-size: 14px;
+  }
+  /* agir avec nous section */
+  .agir_avec_nous-section .agir_avec_nous_section_container .agir_avec_nous_section_content .agir_avec_nous_section_fields .agir_call-actions {
+    gap: 15px;
+    justify-content: space-between;
+  }
+  /* nos partenaire section */
+  .nos_partenaires-section .nos_partenaires_container .nos_partenaires_content {
+    gap: 20px;
+  }
+  .nos_partenaires-section .nos_partenaires_container .nos_partenaires_content .nos_partenaires_section_fields .nos_partenaires_fields_container {
+    gap: 20px;
+  }
+  .nos_partenaires-section .nos_partenaires_container .nos_partenaires_content .nos_partenaires_section_fields .nos_partenaires_fields_container .partenaire {
+    flex: 0 0 150px;
+    height: 60px;
+  }
+  .nos_partenaires-section .nos_partenaires_container .nos_partenaires_content .nos_partenaires_section_fields .nos_partenaires_fields_container .partenaire img {
+    max-height: 60px;
+  }
+  .nos_partenaires-section .nos_partenaires_container .nos_partenaires_content .call-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  /* footer section */
+  .footer .footer_container .footer_content {
+    font-size: 17px;
+    font-weight: 300;
+    padding: 20px 0;
+    display: flex;
+    gap: 10px;
+    flex-direction: column-reverse;
+  }
+  .footer .footer_container .footer_content .contact_ONG {
+    font-size: 15px;
+  }
+  .footer .footer_container .footer_content .contact_ONG .chield {
+    width: -moz-fit-content;
+    width: fit-content;
+    display: flex;
+    gap: 5px;
+  }
+  .footer .footer_container .footer_content .contact_ONG .chield .drapeau {
+    height: 18px;
+  }
+  .footer .footer_container .footer_content .contact_ONG .chield .drapeau span {
+    padding: 1px 4px;
+  }
+  .footer .footer_container .footer_content .send_message_form {
+    border-radius: 0.5rem;
+  }
+  .footer .footer_container .footer_content .send_message_form .form_container .form_title {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .footer .footer_container .footer_content .send_message_form .form_container .form_content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .footer .footer_container .footer_content .send_message_form .form_container .form_content .chield {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .footer_container .footer_content .send_message_form .form_container .form_content .chield input {
+    padding: 5px 0;
+    font-size: 15px;
+    padding-left: 10px;
+    font-weight: 500;
+  }
+  .footer .footer_container .footer_content .send_message_form .form_container .form_content .chield textarea {
+    height: 110px;
+    border-radius: 0.2rem;
+    border: none;
+  }
+  .footer .footer_container .footer_content .send_message_form .form_container .form_content button {
+    border-radius: 0.5rem;
+  }
+  .footer .footer_container .footer_content .send_message_form .form_container .form_content button:hover {
+    background-color: #040131;
+  }
+}/*# sourceMappingURL=main.css.map */

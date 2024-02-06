@@ -1,0 +1,1106 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+img,
+ul,
+ol,
+li,
+form,
+input,
+button {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a,
+button {
+    border: 0;
+    text-decoration: none;
+}
+
+.section {
+    padding: 50px 0;
+
+    .container {
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            .section_title {
+                font-weight: bolder;
+                font-size: 35px;
+                text-transform: uppercase;
+                display: flex;
+                flex-direction: column;
+                color: #16116b;
+            }
+
+            .section_title::after {
+                content: "";
+                width: 100%;
+                border-top: 1px solid rgba(0, 0, 0, .1);
+                left: 0;
+                top: 0;
+                z-index: 10;
+                box-shadow: -1px 5px 1px -1px #d1471f;
+            }
+        }
+    }
+}
+
+/* container */
+.container {
+    padding: 0 70Px;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'kanit', 'sans-serif';
+}
+
+$Port-Gore: #16116b;
+$Ebb: #e9e1e2;
+$Orange-Roughy: #d1471f;
+$Tuscany: #c46133;
+
+/* button */
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    font-weight: 900;
+    padding: 10px 20px;
+    border-radius: 1rem;
+    color: white;
+    background-color: $Orange-Roughy;
+    cursor: pointer;
+    position: relative;
+    transition: .3s;
+
+    i {
+        color: #00000000;
+        transition: .5s;
+        position: absolute;
+        right: 20px;
+        font-size: 15px;
+        bottom: 10px;
+    }
+}
+
+button:hover {
+    background-color: $Port-Gore;
+
+    i {
+        color: #fff;
+        right: 5px;
+    }
+}
+
+/* header section */
+.header {
+    background-color: #FFFFFF;
+    padding: 20px 0;
+
+    .header_container {
+        .header_content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .logo_container {
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                font-size: 30px;
+                font-weight: bolder;
+                align-items: center;
+
+                .logo {}
+
+                .insign {}
+            }
+
+            .nav {
+
+                .nav_content {
+                    display: flex;
+                    gap: 100px;
+
+                    .nav_links {
+                        display: flex;
+                        gap: 25px;
+                        font-size: 16px;
+                        font-weight: 400;
+                        align-items: center;
+
+                        .link {
+                            display: flex;
+
+                            a {
+                                color: $Port-Gore;
+                            }
+
+                            a:hover {
+                                color: orangered;
+                                transition: .1s;
+                            }
+                        }
+                    }
+
+                    .nav_btn {}
+                }
+            }
+
+
+        }
+    }
+}
+
+/* start banner section */
+.banner-section {
+    background: url(../images/Action-Education.jpg) no-repeat center;
+    background-size: cover;
+    height: 500px;
+
+    .banner_container {
+        width: 100%;
+        height: 100%;
+        background-color: #22204c94;
+        display: flex;
+        align-items: center;
+
+        .banner_content {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            .banner_inner {
+                .banner_inner_text {
+                    width: fit-content;
+                    font-size: 40px;
+                    font-weight: bolder;
+                    color: #FFFFFF;
+                }
+            }
+
+            .banner_social_links {
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+
+                .social_link {
+                    border-radius: 50%;
+                    transition: .2s;
+                    background-color: #fff;
+                    height: 40px;
+                    width: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    font-size: 23px;
+
+                    .youtube {
+                        color: #ff0000;
+                    }
+
+                    .twitter {
+                        color: #0dcfdd;
+                    }
+
+                    .instagram {
+                        color: #000;
+                    }
+                }
+
+                .social_link:hover {
+                    font-size: 25px;
+                    background-color: #e2e2e2;
+                }
+            }
+        }
+    }
+}
+
+/* education talk about section */
+.education-section {
+    .education_container {
+        .education_content {
+            .education_section_title {}
+
+            .education_section_fields {
+                .education_section_fields_container {
+                    display: grid;
+                    grid-template-columns: repeat(2, auto);
+                    gap: 30px;
+
+                    .youtub_vid_des_container {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+
+                        .youtub_vid_des_text2 {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 20px;
+                        }
+                    }
+
+                    .youtube_video {
+                        .video {
+                            width: 560px;
+                            height: 315px;
+                            padding: 20px;
+                            border-radius: 2rem;
+                            align-items: center;
+                            justify-content: center;
+                            box-shadow: -2px 5px 10px 5px #9b9898;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* nos cause section style */
+.nos_causes-section {
+    background-color: #16116b;
+    color: #fff;
+
+    .nos_causes_section_container {
+        .nos_causes_section_content {
+            .nos_cause_section_title {
+                color: #fff;
+            }
+
+            .nos_cause_sections_fields {
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+
+                .description {}
+
+                .causes_childs_container {
+                    display: grid;
+                    grid-template-columns: repeat(4, auto);
+                    gap: 30px;
+
+                    .chield {
+                        width: fit-content;
+
+                        .content {
+                            display: flex;
+                            flex-direction: column;
+                            width: 250px;
+                            height: 300px;
+                            position: relative;
+                            border-radius: 2rem;
+                            overflow: hidden;
+                            transition: all .5s;
+
+                            img {
+                                position: absolute;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+
+                            .inner {
+                                position: absolute;
+                                bottom: 0;
+                                padding: 10px;
+                                text-transform: uppercase;
+                                font-size: 20px;
+                                font-weight: 600;
+                                text-align: center;
+                            }
+                        }
+
+                        .content::after {
+                            transition: all .5s;
+                            content: "";
+                            position: absolute;
+                            top: 290px;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            background-color: orangered;
+                            max-width: 100%;
+                            text-align: center;
+                            align-items: center;
+                            justify-content: center;
+                            display: flex;
+                        }
+                    }
+
+                    .chield:hover {
+                        .content::after {
+                            top: 0;
+                            content: "les enfants, les femmes ont tous droit d'aller à l'école"
+                            ;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* about us section */
+.about_us-section {
+    .about_us_section_container {
+        .about_us_section_content {
+            .about_us_section_fields {
+                .about_us_section_fields_container {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 25px;
+
+                    .intro_block {
+                        p {
+                            a {
+                                font-weight: 600;
+                                color: #ce3207;
+                            }
+                        }
+                    }
+
+                    .localisation_block {
+                        .localisation_fields_container {
+                            display: grid;
+                            grid-template-columns: repeat(2, auto);
+                            gap: 50px;
+
+                            .image_des {
+                                padding: 20px;
+                                border-radius: 2rem;
+                                align-items: center;
+                                justify-content: center;
+                                box-shadow: -2px 5px
+                                    /* effet */
+                                    10px 5px #9b9898;
+
+                                img {
+                                    border-radius: 2rem;
+                                    object-fit: cover;
+                                }
+                            }
+
+                            .description {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 50px;
+
+                                .des_content {
+                                    span {
+                                        color: #080358;
+                                        font-weight: 500;
+                                    }
+                                }
+
+                                .make_dont_btn {
+                                    width: fit-content;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* our actions section */
+.nos_actions-section {
+    background-color: #f0920625;
+
+    .nos_actions_section_container {
+        .nos_actions_section_content {
+            .nos_actions_section_title {}
+
+            .nos_actions_section_fields {
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+
+                p {
+                    color: #494949;
+                }
+
+                .fields_container {
+                    display: grid;
+                    grid-template-columns: repeat(4, auto);
+
+                    .action {
+                        overflow: hidden;
+                        display: flex;
+                        flex-direction: column;
+                        width: 270px;
+                        background-color: #fff;
+                        border-radius: 1rem;
+
+                        .action_image {}
+
+                        .action_des {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 10px;
+                            padding: 10px;
+                            padding-top: 0;
+
+
+                            .description {
+                                .content {
+                                    text-align: left;
+                                    color: #080358;
+                                }
+
+                                .date {
+                                    color: #ce3207;
+                                    text-align: right;
+                                }
+                            }
+
+                            .action_show {
+                                width: fit-content;
+                                border: 1px solid #ce3207;
+                                background-color: #fff;
+                                color: #ce3207;
+                                padding: 5px 15px;
+                                font-weight: 600;
+                                font-size: 15px;
+                            }
+
+                            .action_show:hover {
+                                border: none;
+                                background-color: #16116b;
+                                color: #fff;
+                                padding: 6px 15px;
+                            }
+                        }
+
+                    }
+                }
+
+                .actions_show_all {
+                    width: fit-content;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
+
+/* agir avec nous section */
+.agir_avec_nous-section {
+    .agir_avec_nous_section_container {
+        .agir_avec_nous_section_content {
+            .agir_avec_nous_section_title {}
+
+            .agir_avec_nous_section_fields {
+                .agir_call-actions {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 40px;
+
+                    .what_icon {
+                        display: flex;
+                        position: inherit;
+                        gap: 10px;
+
+                        #what_icon {
+                            position: inherit;
+                            color: #0c6800;
+                            font-size: 21px;
+                            font-weight: 500;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+@keyframes defilement {
+    0% {
+        transform: translateX(0);
+        /* Début à gauche */
+    }
+
+    100% {
+        transform: translateX(-100%);
+        /* Fin à droite */
+    }
+}
+
+/* nos partenaire section */
+.nos_partenaires-section {
+    .nos_partenaires_container {
+        .nos_partenaires_content {
+            .nos_partenaire_section_title {}
+
+            .nos_partenaires_section_fields {
+                .nos_partenaires_fields_container {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    overflow-x: auto;
+                    white-space: nowrap;
+                    height: 100px;
+                    overflow-x: hidden;
+                    gap: 100px;
+                    align-items: center;
+
+
+
+                    .partenaire {
+                        animation: defilement 4s linear infinite;
+                        flex: 0 0 250px;
+                        height: 70px;
+                        text-align: center;
+                        border: 1px solid #9b9898;
+                        border-radius: .2rem;
+                        margin-right: 10px;
+                        overflow: hidden;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        //padding: 5px 0;
+
+                        img {
+                            object-fit: cover;
+                            max-width: 100%;
+                            max-height: 70px;
+                        }
+                    }
+                }
+            }
+
+            .call-actions {
+                display: flex !important;
+                gap: 50px;
+            }
+
+        }
+    }
+}
+
+/* footer section */
+.footer {
+    background-color: #080358;
+    color: #fff;
+
+    .footer_container {
+        .footer_content {
+            padding: 50px 0;
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+
+            .contact_ONG {
+                .chield {
+                    display: flex;
+                    gap: 5px;
+
+                    .drapeau {
+                        display: flex;
+                        border: 1px solid #fff;
+                        height: 20px;
+
+                        span {
+                            padding: 1px 5px;
+                        }
+
+                        .orange {
+                            background-color: #ff7b00;
+                        }
+
+                        .blanc {
+                            background-color: #fff;
+                        }
+
+                        .vert {
+                            background-color: #35bd00;
+                        }
+                    }
+                }
+            }
+
+            .send_message_form {
+                background-color: #d1471f;
+                color: #fff;
+                border-radius: 1rem;
+
+                .form_container {
+                    padding: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    .form_title {
+                        font-size: 20px;
+                        font-weight: 500;
+                        text-align: center;
+                    }
+
+                    .form_content {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+
+                        .chield {
+                            display: flex;
+                            flex-direction: column;
+
+                            label {
+                                span {
+                                    color: #080358;
+                                }
+                            }
+
+                            input {
+                                padding: 7px 0;
+                                font-size: 15px;
+                                padding-left: 20px;
+                                font-weight: 500;
+                                border-radius: .2rem;
+                                border: none;
+                            }
+
+                            textarea {
+                                height: 150px;
+                                border-radius: .2rem;
+                                border: none;
+                            }
+                        }
+
+                        button {
+                            width: fit-content;
+                            background-color: #16116b;
+                            border: 2px solid inherit;
+                        }
+
+                        button:hover {
+                            background-color: #040131;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .container {
+        padding: 0 12px;
+    }
+
+    /* button */
+    button {
+        font-size: 15px;
+        font-weight: 500;
+        padding: 7px 15px;
+        width: max-content;
+
+        i {
+            right: 20px;
+            font-size: 12px;
+            bottom: 8px;
+        }
+    }
+
+    .section {
+        text-align: justify;
+
+        .container {
+            .content {
+                .section_title {
+                    font-size: 18px;
+                    font-weight: 600;
+                    text-align: left;
+                    width: max-content;
+                }
+
+                font-weight: 300;
+                font-size: 17px;
+            }
+        }
+    }
+
+    /* header section */
+    .header {
+        padding: 10px 0;
+        width: 100%;
+
+        .header_container {
+            .header_content {
+                .logo_container {
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+
+                .nav {
+                    .nav_content {
+                        display: none;
+                    }
+                }
+
+                .bar {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 5px;
+                    background-color: #e6e6e6;
+                    gap: 4px;
+
+                    span {
+                        padding: 1.5px 0;
+                        width: 25px;
+                        background-color: #ce3207;
+                    }
+
+                    .bottom-bar {
+                        width: 18px;
+                    }
+                }
+            }
+        }
+    }
+
+    /* start banner section */
+    .banner-section {
+        height: 250px;
+
+        .banner_container {
+            .banner_content {
+                gap: 20px;
+
+                .banner_inner {
+                    .banner_inner_text {
+                        font-size: 18px;
+                        font-weight: 400;
+                        width: fit-content;
+                    }
+                }
+
+                .banner_social_links {
+                    gap: 10px;
+
+                    .social_link {
+                        height: 30px;
+                        width: 30px;
+                        font-size: 18px;
+                    }
+
+                    .social_link:hover {
+                        font-size: 25px;
+                        background-color: inherit;
+                    }
+                }
+            }
+        }
+    }
+
+    /* education talk about section */
+    .education-section {
+        .education_container {
+            .education_content {
+                .education_section_title {}
+
+                .education_section_fields {
+                    .education_section_fields_container {
+                        display: flex;
+                        flex-direction: column-reverse;
+                        gap: 30px;
+                        text-align: justify;
+
+
+
+                        .youtub_vid_des_container {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 10px;
+                            font-weight: 300;
+                            font-size: 17px;
+
+                            .youtub_vid_des_text2 {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 20px;
+                            }
+                        }
+
+                        .youtube_video {
+                            .video {
+                                max-width: 90%;
+                                height: 250px;
+                                padding: 3%;
+                                border-radius: 2rem;
+                                box-shadow: -2px 5px 10px 5px #9b9898;
+                                margin: 0 auto;
+                                display: flex;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* nos cause section style */
+    .nos_causes-section {
+        .nos_causes_section_container {
+            .nos_causes_section_content {
+                .nos_cause_sections_fields {
+                    .description {}
+
+                    .causes_childs_container {
+                        grid-template-columns: repeat(1, auto);
+                        justify-content: center;
+
+                        .chield {
+                            width: fit-content;
+
+                            .content {
+                                height: 250px;
+
+                                .inner {
+                                    font-size: 18px;
+                                    font-weight: 400;
+                                }
+                            }
+
+                            .content::after {
+                                top: 98%;
+                            }
+                        }
+
+                        .chield:hover {
+                            .content::after {
+                                top: 0;
+                                content: "les enfants, les femmes ont tous droit d'aller à l'école"
+                                ;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* about us section */
+    .about_us-section {
+        .about_us_section_container {
+            .about_us_section_content {
+                .about_us_section_fields {
+                    .about_us_section_fields_container {
+                        gap: 20px;
+
+                        .intro_block {
+                            p {
+                                a {
+                                    font-weight: 500;
+                                }
+                            }
+                        }
+
+                        .localisation_block {
+                            .localisation_fields_container {
+                                display: grid;
+                                grid-template-columns: repeat(1, auto);
+                                gap: 20px;
+
+                                .image_des {
+                                    padding: 10px;
+                                    box-shadow: -2px 0px
+                                        /* effet */
+                                        10px 5px #9b9898;
+                                }
+
+                                .description {
+                                    gap: 20px;
+
+                                    .des_content {
+                                        span {
+                                            font-weight: 400;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* our actions section */
+    .nos_actions-section {
+        .nos_actions_section_container {
+            .nos_actions_section_content {
+                .nos_actions_section_fields {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    .fields_container {
+                        display: grid;
+                        grid-template-columns: repeat(1, auto);
+                        justify-content: center;
+                        gap: 20px;
+
+                        .action {
+                            width: 100%;
+
+                            .action_des {
+                                .action_show {
+                                    font-weight: 500;
+                                    font-size: 14px;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* agir avec nous section */
+    .agir_avec_nous-section {
+        .agir_avec_nous_section_container {
+            .agir_avec_nous_section_content {
+                .agir_avec_nous_section_fields {
+                    .agir_call-actions {
+                        gap: 15px;
+                        justify-content: space-between;
+                    }
+                }
+            }
+        }
+    }
+
+    /* nos partenaire section */
+    .nos_partenaires-section {
+        .nos_partenaires_container {
+            .nos_partenaires_content {
+                gap: 20px;
+
+                .nos_partenaires_section_fields {
+                    .nos_partenaires_fields_container {
+                        gap: 20px;
+
+                        .partenaire {
+                            flex: 0 0 150px;
+                            height: 60px;
+
+                            img {
+                                max-height: 60px;
+                            }
+                        }
+                    }
+                }
+
+                .call-actions {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 10px;
+                }
+
+            }
+        }
+    }
+
+    /* footer section */
+    .footer {
+        .footer_container {
+            .footer_content {
+                font-size: 17px;
+                font-weight: 300;
+                padding: 20px 0;
+                display: flex;
+                gap: 10px;
+                flex-direction: column-reverse;
+
+                .contact_ONG {
+                    font-size: 15px;
+
+                    .chield {
+                        width: fit-content;
+                        display: flex;
+                        gap: 5px;
+
+                        .drapeau {
+                            height: 18px;
+
+                            span {
+                                padding: 1px 4px;
+                            }
+                        }
+                    }
+                }
+
+                .send_message_form {
+                    border-radius: .5rem;
+
+                    .form_container {
+                        .form_title {
+                            font-size: 18px;
+                            font-weight: 400;
+                        }
+
+                        .form_content {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 5px;
+
+                            .chield {
+                                font-size: 15px;
+                                display: flex;
+                                flex-direction: column;
+
+                                input {
+                                    padding: 5px 0;
+                                    font-size: 15px;
+                                    padding-left: 10px;
+                                    font-weight: 500;
+                                }
+
+                                textarea {
+                                    height: 110px;
+                                    border-radius: .2rem;
+                                    border: none;
+                                }
+                            }
+
+                            button {
+                                border-radius: .5rem;
+                            }
+
+                            button:hover {
+                                background-color: #040131;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
