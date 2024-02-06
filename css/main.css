@@ -96,9 +96,10 @@ button {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  font-weight: 300;
 }
 .section .container .content .section_title {
-  font-weight: bolder;
+  font-weight: 600;
   font-size: 35px;
   text-transform: uppercase;
   display: flex;
@@ -590,6 +591,39 @@ button:hover i {
 .footer .footer_container .footer_content .send_message_form .form_container .form_content button:hover {
   background-color: #040131;
 }
+.footer .footer_container .maker {
+  padding: 10px 0;
+}
+.footer .footer_container .maker .maker-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.footer .footer_container .maker .maker-contact .chield {
+  color: #fff;
+  text-align: center;
+}
+.footer .footer_container .maker .maker-contact .github:hover {
+  color: #c9c9c9;
+}
+.footer .footer_container .maker .maker-contact .e-mail i {
+  color: #ff0000;
+}
+.footer .footer_container .maker .maker-contact .e-mail:hover {
+  color: #ff0000;
+}
+
+.copy-aside {
+  background-color: #000;
+}
+.copy-aside .container .contente {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  color: #fff;
+  gap: 10px;
+}
 
 @media (max-width: 420px) {
   .container {
@@ -602,6 +636,7 @@ button:hover i {
     padding: 7px 15px;
     width: -moz-max-content;
     width: max-content;
+    border-radius: 0.5rem;
   }
   button i {
     right: 20px;
@@ -638,20 +673,17 @@ button:hover i {
     display: flex;
     flex-direction: column;
     padding: 5px;
-    background-color: #e6e6e6;
-    gap: 4px;
+    background-color: rgba(0, 195, 255, 0.0901960784);
+    gap: 5px;
   }
   .header .header_container .header_content .bar span {
-    padding: 1.5px 0;
+    padding: 1.7px 0;
     width: 25px;
     background-color: #ce3207;
   }
-  .header .header_container .header_content .bar .bottom-bar {
-    width: 18px;
-  }
   /* start banner section */
   .banner-section {
-    height: 250px;
+    height: 280px;
   }
   .banner-section .banner_container .banner_content {
     gap: 20px;
@@ -847,5 +879,22 @@ button:hover i {
   }
   .footer .footer_container .footer_content .send_message_form .form_container .form_content button:hover {
     background-color: #040131;
+  }
+  .footer .footer_container .maker .maker-contact {
+    text-align: left;
+    font-size: 15px;
+    font-weight: 300;
+    gap: 5px;
+  }
+  .footer .footer_container .maker .maker-contact .chield {
+    text-align: left;
+  }
+  .copy-aside {
+    background-color: #000;
+  }
+  .copy-aside .container .contente {
+    font-size: 15px;
+    font-weight: 400;
+    gap: 5px;
   }
 }/*# sourceMappingURL=main.css.map */

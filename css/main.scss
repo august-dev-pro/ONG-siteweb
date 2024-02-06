@@ -108,13 +108,15 @@ button {
             gap: 30px;
 
             .section_title {
-                font-weight: bolder;
+                font-weight: 600;
                 font-size: 35px;
                 text-transform: uppercase;
                 display: flex;
                 flex-direction: column;
                 color: #16116b;
             }
+
+            font-weight: 300;
 
             .section_title::after {
                 content: "";
@@ -137,6 +139,7 @@ button {
 body {
     font-size: 18px;
     font-family: 'kanit', 'sans-serif';
+    // font-weight: 300;
 }
 
 $Port-Gore: #16116b;
@@ -768,6 +771,52 @@ button:hover {
                 }
             }
         }
+
+        .maker {
+            padding: 10px 0;
+
+            .maker-contact {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 30px;
+
+
+                .chield {
+                    color: #fff;
+                    text-align: center;
+                }
+
+                .github:hover {
+                    color: #c9c9c9;
+                }
+
+                .e-mail {
+                    i {
+                        color: #ff0000;
+                    }
+                }
+
+                .e-mail:hover {
+                    color: #ff0000;
+                }
+            }
+        }
+    }
+}
+
+.copy-aside {
+    background-color: #000;
+
+    .container {
+        .contente {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            color: #fff;
+            gap: 10px;
+
+        }
     }
 }
 
@@ -782,6 +831,7 @@ button:hover {
         font-weight: 500;
         padding: 7px 15px;
         width: max-content;
+        border-radius: .5rem;
 
         i {
             right: 20px;
@@ -830,18 +880,16 @@ button:hover {
                     display: flex;
                     flex-direction: column;
                     padding: 5px;
-                    background-color: #e6e6e6;
-                    gap: 4px;
+                    background-color: #00c3ff17;
+                    gap: 5px;
 
                     span {
-                        padding: 1.5px 0;
+                        padding: 1.7px 0;
                         width: 25px;
                         background-color: #ce3207;
                     }
 
-                    .bottom-bar {
-                        width: 18px;
-                    }
+
                 }
             }
         }
@@ -849,7 +897,7 @@ button:hover {
 
     /* start banner section */
     .banner-section {
-        height: 250px;
+        height: 280px;
 
         .banner_container {
             .banner_content {
@@ -1163,6 +1211,32 @@ button:hover {
                         }
                     }
                 }
+            }
+
+            .maker {
+                .maker-contact {
+                    text-align: left;
+                    font-size: 15px;
+                    font-weight: 300;
+                    gap: 5px;
+
+                    .chield {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+
+    .copy-aside {
+        background-color: #000;
+
+        .container {
+            .contente {
+                font-size: 15px;
+                font-weight: 400;
+                gap: 5px;
+
             }
         }
     }
